@@ -5,12 +5,12 @@ import chalk from "chalk";
 import path from "path";
 
 import Database from "./database";
-import { type TableInfo } from "../types/crawling";
+import { type TableInfo } from "./crawling";
 
 // 디버깅 모드
 const DEBUG = false;
 
-const DB_PATH = path.join(process.cwd(), "src/data/db.json");
+const DB_PATH = path.join(process.cwd(), "packages/common/data/db.json");
 
 const DEFAULT_DOMAIN = "https://vocadb.net";
 const DEFAULT_URL = new URL(DEFAULT_DOMAIN);

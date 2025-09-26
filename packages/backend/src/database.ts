@@ -3,8 +3,8 @@ import { Low } from "lowdb";
 import dayjs from "dayjs";
 import chalk from "chalk";
 
-import { TableInfo, VocaResponse, PVs } from "../types/crawling";
-import { SongList, Song } from "../types/database";
+import { TableInfo, VocaResponse, PVs } from "./crawling";
+import { SongList, Song } from "@daily-calendar/common";
 
 export default class Database {
   private db: Low<SongList[]> | null = null;
